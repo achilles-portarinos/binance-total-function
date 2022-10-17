@@ -11,7 +11,7 @@ namespace Moderndrummer.Binance
 {
     public class BinanceTotalCalculator
     {
-        //private const string TimeTrigger = "0 0 0 */1 * *";
+        //private const string TimeTrigger = "0 0 12 * * ?"; // every day at noon
 
         [FunctionName("BinanceTotalCalculator")]
         public async Task Run([TimerTrigger("%TimeTrigger%")] TimerInfo myTimer, ILogger log)
